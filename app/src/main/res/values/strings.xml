@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">Filter Application</string>
+    <string name="user_id">ชื่อผู้ใช้ : </string>
+    <string name="password_id">รหัสผ่าน : </string>
+    <string name="re_password_id">ยืนยันรหัสผ่าน : </string>
+    <string name="i_name">คำนำหน้า : </string>
+    <string name="name">ชื่อ : </string>
+    <string name="nickname">นามสกุล : </string>
+    <string name="company_name">ชื่อบริษัท : </string>
+    <string name="position">ตำแหน่งงาน : </string>
+    <string name="email">อัเมล์ : </string>
+    <string name="tel">เบอร์โทรศัพท์ : </string>
+    <string name="address">ที่อยู่ : </string>
+
+    <string name="code_id">เลขบัตรประช่าชน : </string>
+    <string name="product_name">ชื่อสินค้า : </string>
+    <string name="brand_name">ยี่ห้อสินค้า : </string>
+    <string name="generation">รุ่น : </string>
+    <string name="size">ขนาด : </string>
+    <string name="year">ปี : </string>
+    <string name="category">ประเภท : </string>
+    <string name="system">ระบบ : </string>
+    <string name="equipment_brand">ยี่ห้ออะไหล่ : </string>
+    <string name="warning_date">วันที่เตือนล่วงหน้า : </string>
+    <string name="set_date">วันที่เตือนเปลี่ยนอะไหล่ : </string>
+    <string name="install_date">วันที่ติดตั้งสินค้า : </string>
+
+
+    Equipment Brand
+
+
+</resources>
