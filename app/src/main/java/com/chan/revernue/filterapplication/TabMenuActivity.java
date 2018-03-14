@@ -29,7 +29,7 @@ public class TabMenuActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_tab_menu, menu);
+        getMenuInflater().inflate(R.menu.activity_tab_host, menu);
         return true;
     }
 
