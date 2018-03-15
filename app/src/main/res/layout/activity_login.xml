@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
@@ -9,7 +10,7 @@
     tools:context="com.chan.revernue.filterapplication.LoginActivity">
 
     <ImageView
-        android:id="@+id/imageViewEmail"
+        android:id="@+id/imgLogo"
         android:layout_width="129dp"
         android:layout_height="129dp"
         android:layout_alignParentTop="true"
@@ -25,37 +26,33 @@
 
 
     <LinearLayout
-
         android:id="@+id/linTopLogin"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="6"
-
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
 
 
         <LinearLayout
             android:id="@+id/linTopUser"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-
             android:orientation="horizontal">
 
-
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
 
                 android:src="@mipmap/ic_login_usre" />
 
             <EditText
                 android:id="@+id/edtEmail"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:textColor="#ffffff"
                 android:textColorHint="#dad2d2"
                 android:hint="E-mail" />
@@ -65,21 +62,22 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/linTopUser"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@mipmap/ic_key" />
 
             <EditText
                 android:id="@+id/edtPassword"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:inputType="textPassword"
                 android:textColorHint="#dad2d2"
                 android:textColor="#ffffff"
@@ -91,13 +89,11 @@
 
 
         <Button
-
-
             android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:background="#0066AB"
             android:text="LOGIN"
             android:textColor="#ffffff"
@@ -108,36 +104,19 @@
             android:topLeftRadius="30dp"
             android:topRightRadius="30dp"/>
 
-        <Button
-            android:id="@+id/btnRegister"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:layout_marginTop="10dp"
-            android:background="#0066AB"
-            android:text="REGISTER"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:bottomRightRadius="100dp"
-            android:bottomLeftRadius="30dp"
-            android:topLeftRadius="30dp"
-            android:topRightRadius="30dp"
-            android:onClick="onClickbtnRegister"/>
+
 
         <TextView
             android:id="@+id/txtCreateAccount"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:clickable="true"
             android:text="forget Password?"
             android:textColor="#dad2d2"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:onClick="onClickforgetPassword"/>
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
@@ -146,4 +125,4 @@
 
 
 
-</RelativeLayout>
+</LinearLayout>
